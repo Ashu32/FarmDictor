@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      FarmoDictor
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">FarmoDictor</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <img src="assets/testing.jpg" alt="testing">
+    <ion-card-header>
+      <ion-card-title>Soil testing</ion-card-title>
+    </ion-card-header>
+    <ion-fab vertical="bottom" horizontal="end">
+      <a [routerLink]="'/soiltesting'">
+        <ion-icon style="font-size: x-large;" name="arrow-forward-outline"></ion-icon>
+      </a>
+    </ion-fab>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/weather.jpg" alt="weather">
+    <ion-card-header>
+      <ion-card-title>Weather Information</ion-card-title>
+    </ion-card-header>
+    <ion-fab vertical="bottom" horizontal="end">
+      <a [routerLink]="'/weather'">
+        <ion-icon style="font-size: x-large;" name="arrow-forward-outline"></ion-icon>
+      </a>
+    </ion-fab>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/cropinfo.jpg" alt="weather">
+    <ion-card-header>
+      <ion-card-title>Crop Information</ion-card-title>
+    </ion-card-header>
+    <ion-fab vertical="bottom" horizontal="end">
+      <a [routerLink]="'/cropinfo'">
+        <ion-icon style="font-size: x-large;" name="arrow-forward-outline"></ion-icon>
+      </a>
+    </ion-fab>
+  </ion-card>
+</ion-content>

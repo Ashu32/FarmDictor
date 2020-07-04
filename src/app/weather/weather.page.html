@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-fab vertical="top" horizontal="start">
+      <a [routerLink]="'/home'">
+        <ion-icon style="font-size: x-large;color: white;" name="arrow-back-outline"></ion-icon>
+      </a>
+    </ion-fab>
+    <ion-title style="text-align: center;">weather</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <h1 style="text-align: center; color: white;">{{place}}</h1>
+  <h2 style="text-align: center; color: white;">{{ today | date:'medium' }}</h2>
+  <div class="ion-padding">
+
+    <table>
+      <tr>
+        <td rowspan="2" style="padding: 12px;">
+          <img src={{icon}}>
+        </td>
+        <td style="font-size:xx-large; color: white; padding: 12px;">
+          {{temperature}}
+        </td>
+      </tr>
+      <tr>
+        <td style="font-size: x-large; color: white; padding: 12px;">
+          {{type}}
+        </td>
+      </tr>
+    </table>
+
+  </div>
+  <div style="float: right;"></div>
+</ion-content>

@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-fab vertical="top" horizontal="start">
+      <a [routerLink]="'/home'">
+        <ion-icon style="font-size: x-large;color: white;" name="arrow-back-outline"></ion-icon>
+      </a>
+    </ion-fab>
+    <ion-title style="text-align: center;">soiltesting</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list *ngFor="let item of soilf ">
+      <ion-list-header style="font-weight: bold;">
+        Report
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Nitrogen</ion-label>
+        <ion-note slot="end" color="warning" style="font-size: medium;">{{ item.N }}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Phosphorous</ion-label>
+        <ion-note slot="end" color="warning" style="font-size: medium;">{{ item.P }}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Potassium</ion-label>
+        <ion-note slot="end" color="danger" style="font-size: medium;">{{item.K}}</ion-note>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>pH</ion-label>
+        <ion-note slot="end" color="secondary" style="font-size: medium;">{{item.pH}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Crop</ion-label>
+        <ion-note slot="end" color="primary" style="font-size: medium;">{{item.crop}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Fertilizer</ion-label>
+        <ion-note slot="end" color="tertiary" style="font-size: medium;">{{item.fertilizer}}</ion-note>
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
+  <div>
+    <p style="text-align: center; padding: 10px;">for more details and any query contact our experts,ph-
+      7865523823,8523697412</p>
+  </div>
+  <ion-fab horizontal="end">
+    <ion-button size="small" color="danger">
+      Send report
+    </ion-button>
+  </ion-fab>
+
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="dark">
+    <p style="padding-left: 13px;">You can order fertilizer here</p>
+    <ion-fab horizontal="end" vertical="bottom">
+      <ion-button color="success">
+        Buy
+      </ion-button>
+    </ion-fab>
+  </ion-toolbar>
+</ion-footer>

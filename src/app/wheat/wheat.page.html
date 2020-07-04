@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-fab vertical="top" horizontal="start">
+    <a [routerLink]="'/cropinfo'">
+      <ion-icon style="font-size: x-large;color: white;" name="arrow-back-outline"></ion-icon>
+    </a>
+  </ion-fab>
+  <ion-toolbar color="success">
+    <ion-title style="text-align: center;">wheat</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="font-weight: bold;">Favourable Climate</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h3>Climate</h3>
+      <ul>
+        <li>Wheat is a rabi season crop.</li>
+        <li>The cool and sunny winters are very conducive for growth pf Wheat crop.</li>
+        <li>For getting higher yield it requires at least 100 cold days.</li>
+      </ul>
+      <h3>Temperature</h3>
+      <ul>
+        <li>At the time of germination it requires mean daily temperature between 20 to 25°C.</li>
+        <li>Mean daily temperature between 20 to 23°C accelerates the crop growth.</li>
+        <li>For proper grain filling it requires 23 to 25°C mean daily temperature</li>
+      </ul>
+      <h3>Crop Water Requirement</h3>
+      <ul>
+        <li>Equivalent to 450-650 mm of rainfall.</li>
+      </ul>
+
+    </ion-card-content>
+
+  </ion-card>
+  <h2 style="text-align: center; font-weight: bold;">Nutrient Management</h2>
+  <div style="text-align: center;">
+    <iframe width="300" height="300" [src]="vidUrl" framborder="0" allowfullscreen></iframe>
+  </div>
+</ion-content>
