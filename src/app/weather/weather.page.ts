@@ -38,7 +38,7 @@ export class WeatherPage implements OnInit {
       latitude +
       "&lon=" +
       longitude +
-      "&appid=3ae0a359c8cb2090a5736359dafd0261";
+      "&appid=******************";
     this.httpClient.get(url).subscribe((temperaturedata) => {
       var obj = <any>temperaturedata;
       this.place = obj.name;
